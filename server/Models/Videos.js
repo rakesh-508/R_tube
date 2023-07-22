@@ -13,11 +13,11 @@ const Videoschema = new mongoose.Schema({
         required:true,
     },
     imgUrl:{
-        type:string,
+        type:String,
         required:true
     },
     videoUrl:{
-        type:string,
+        type:String,
         required:true
     },
     views:
@@ -26,15 +26,15 @@ const Videoschema = new mongoose.Schema({
         default:0
     },
     tags:{
-        type:[stirng],
+        type:[String],
         default:[]
     },
     likes:{
-        type:[string],
+        type:[String],
         default:[]
     },
     dislikes:{
-        type:[string],
+        type:[String],
         default:[]
     }
 },{timestamps:true})
